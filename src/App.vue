@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+  import navbar from './components/navbar.vue';
+</script>
 
 <template>
-<Button label="Enviar" />
+  <div>
+    <navbar/>
+  </div>
 </template>
 
 <style scoped></style>
