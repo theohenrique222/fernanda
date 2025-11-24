@@ -1,8 +1,8 @@
 <template>
     <section class="pb-20 bg-amber-50">
         <main class="max-w-6xl m-auto flex">
-            <div class="max-w-4xl">
-                <h1 class="text-red-950 text-4xl font-extrabold mb-10">Bem-estar que transforma!</h1>
+            <div class="max-w-3xl">
+                <h1 class="text-red-950 text-4xl font-extrabold mb-16 mt-30">Bem-estar que transforma!</h1>
                 <p class="text-black text-xl font-extralight">Terapeuta integrativa com ampla experiência em tratamentos
                     corporais voltados ao bem-estar físico e emocional. Especialista
                     em técnicas de relaxamento, incluindo massagem relaxante,
@@ -13,7 +13,7 @@
                     proporcionando resultados eficazes e cuidados personalizados.</p>
             </div>
             <div class="">
-                <h1 class="text-3xl text-black">IMG</h1>
+                <img class="h-screen" src="/img/avatar.jpeg" alt="">
             </div>
         </main>
     </section>

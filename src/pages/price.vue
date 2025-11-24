@@ -4,7 +4,7 @@
             <div class="text-center mb-14">
                 <h1 class="text-4xl text-red-950 font-extrabold">Equilíbrio e bem-estar para o corpo e a mente!</h1>
             </div>
-            <div class="grid grid-cols-2 gap-10">
+            <div class="grid grid-cols-2 gap-10 px-10">
                 <div v-for="(service, index) in services" :key="index" class="">
                     <h3 class="text-red-950 mb-3 font-bold text-lg">
                         {{ service.title }}: {{ service.price }}
