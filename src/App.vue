@@ -4,6 +4,7 @@
   import about from './pages/about.vue';
   import price from './pages/price.vue';
   import plans from './pages/plans.vue';
+  import protocol from './pages/protocol.vue';
 
 </script>
 
@@ -14,6 +15,7 @@
     <about/>
     <price/>
     <plans/>
+    <protocol/>
   </div>
 </template>
 
