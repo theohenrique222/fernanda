@@ -1,15 +1,15 @@
 <template>
     <section class="min-h-screen bg-amber-50">
         <main class="max-w-6xl m-auto">
-            <div class="text-center mb-10">
+            <div class="text-center mb-14">
                 <h1 class="text-4xl text-red-950 font-extrabold">Equilíbrio e bem-estar para o corpo e a mente!</h1>
             </div>
             <div class="grid grid-cols-2 gap-10">
                 <div v-for="(service, index) in services" :key="index" class="">
-                    <h3 class="text-red-950 mb-3 font-bold">
+                    <h3 class="text-red-950 mb-3 font-bold text-lg">
                         {{ service.title }}: {{ service.price }}
                     </h3>
-                    <p class="text-black">
+                    <p class="text-black text-sm">
                         {{ service.description }}
                     </p>
                 </div>
