@@ -6,6 +6,7 @@
   import plans from './pages/plans.vue';
   import protocol from './pages/protocol.vue';
   import services from './pages/services.vue';
+  import end from './pages/end.vue';
 
 </script>
 
@@ -18,6 +19,7 @@
     <plans/>
     <protocol/>
     <services/>
+    <end/>
   </div>
 </template>
 
