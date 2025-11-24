@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen bg-amber-50">
+    <section class="pb-20 bg-amber-50">
         <main class="max-w-6xl m-auto flex">
             <div class="max-w-4xl">
                 <h1 class="text-red-950 text-4xl font-extrabold mb-10">Bem-estar que transforma!</h1>
