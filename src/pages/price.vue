@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen bg-amber-50">
+    <section id="price" class="min-h-screen bg-amber-50">
         <main class="max-w-6xl m-auto">
             <div class="text-center mb-14">
                 <h1 class="text-4xl text-red-950 font-extrabold">Equilíbrio e bem-estar para o corpo e a mente!</h1>

@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen bg-amber-50 w-full pt-20">
+    <section id="" class="min-h-screen bg-amber-50 w-full pt-20">
         <main class="max-w-6xl m-auto">
             <div class="text-center mb-16">
                 <h1 class="text-5xl text-red-950 font-extrabold">

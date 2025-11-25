@@ -1,5 +1,5 @@
 <template>
-    <section class="pb-20 bg-amber-50">
+    <section id="about" class="bg-amber-50 pb-20">
         <main class="max-w-6xl m-auto flex">
             <div class="max-w-3xl">
                 <h1 class="text-red-950 text-4xl font-extrabold mb-16 mt-30">Bem-estar que transforma!</h1>
@@ -13,7 +13,7 @@
                     proporcionando resultados eficazes e cuidados personalizados.</p>
             </div>
             <div class="">
-                <img class="h-screen" src="/img/avatar.jpeg" alt="">
+                <img class="h-screen" src="/img/avatar.png" alt="">
             </div>
         </main>
     </section>

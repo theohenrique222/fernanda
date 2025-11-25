@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen bg-amber-50 w-full">
+    <section id="protocols" class="min-h-screen bg-amber-50 w-full">
         <main class="max-w-6xl m-auto">
             <div class="text-center mb-16">
                 <h1 class="text-5xl text-red-950 font-extrabold">
