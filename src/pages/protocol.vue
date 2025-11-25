@@ -1,13 +1,13 @@
 <template>
-    <section id="protocols" class="min-h-screen bg-amber-50 w-full">
+    <section id="protocols" class="bg-amber-50 w-full">
         <main class="max-w-6xl m-auto">
             <div class="text-center mb-16">
-                <h1 class="text-5xl text-red-950 font-extrabold">
+                <h1 class="lg:text-5xl text-4xl text-red-950 font-extrabold">
                     Refúgio do Corpo e Mente
                 </h1>
             </div>
-            <div class="grid grid-cols-2 max-w-5xl m-auto">
-                <div v-for="(plan, index) in plans" :key="index" class="mb-10">
+            <div class="lg:grid grid-cols-2 max-w-5xl m-auto">
+                <div v-for="(plan, index) in plans" :key="index" class="pb-10 px-3">
                     <h3 class="text-red-950 mb-3 font-bold text-xl">
                         {{ plan.title }} {{ plan.id }} - R$ {{ plan.price }}
                     </h3>
@@ -18,7 +18,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="mt-5 px-20 text-lg">
+            <div class="mt-5 lg:px-20 px-3 lg:text-start text-center text-lg">
                 <h3 class="text-red-950">
                     O <span class="font-extrabold">Refúgio do Corpo e Mente</span> é um convite para se desligar do dia
                     a dia e se reconectar consigo
