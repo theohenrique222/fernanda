@@ -1,12 +1,12 @@
 <template>
     <section id="plans" class="min-h-screen bg-amber-50 w-full">
         <main class="max-w-6xl m-auto">
-            <div class="text-center mb-16">
-                <h1 class="text-5xl text-red-950 font-extrabold">Planos terapêuticos</h1>
+            <div class="text-center pb-16">
+                <h1 class="lg:text-5xl text-4xl text-red-950 font-extrabold">Planos terapêuticos</h1>
             </div>
-            <div class="grid grid-cols-2 max-w-5xl m-auto">
-                <div v-for="(plan, index) in plans" :key="index" class="mb-10">
-                    <h3 class="text-red-950 mb-3 font-bold text-xl">
+            <div class="lg:grid grid-cols-2 max-w-5xl m-auto lg:p-0 px-3">
+                <div v-for="(plan, index) in plans" :key="index" class="pb-10">
+                    <h3 class="text-red-950 pb-3 font-bold text-xl">
                         {{ plan.title }} {{ plan.id }} - R$ {{ plan.price }}
                     </h3>
                     <ul class="text-black text-sm list-disc list-inside">
