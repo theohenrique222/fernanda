@@ -1,24 +1,24 @@
 <template>
-    <section id="" class="min-h-screen bg-amber-50 w-full pt-20">
+    <section id="" class="bg-amber-50 w-full pt-20">
         <main class="max-w-6xl m-auto">
             <div class="text-center mb-16">
-                <h1 class="text-5xl text-red-950 font-extrabold">
+                <h1 class="lg:text-5xl text-4xl text-red-950 font-extrabold">
                     Atendimentos
                 </h1>
-                <h3 class="text-3xl text-red-950 pt-10">
+                <h3 class="lg:text-3xl text-xl text-red-950 lg:pt-10 pt-5 px-3">
                     Atendimento em espaço projetado para um maior conforto:
                 </h3>
             </div>
-            <div class="max-w-5xl m-24 ">
-                <div v-for="(plan, index) in plans" :key="index" class="mb-10">
+            <div class="max-w-5xl px-3 lg:px-20 ">
+                <div v-for="(plan, index) in plans" :key="index" class="pb-10">
                     <ul class="text-black text-sm list-disc list-inside">
-                        <li v-for="item, i in plan.description" :key="i" class="text-xl font-extralight">
+                        <li v-for="item, i in plan.description" :key="i" class="text-xl font-extralight lg:pb-1 pb-5">
                             {{ item }}
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="mt-5 px-20 text-lg">
+            <div class="mt-5 lg:px-20 px-3 text-lg">
                 <h3 class="text-red-950 text-xl font-bold">
                     Tudo pensado nos mínimos detalhes para oferecer uma experiência única e inesquecível!
                 </h3>
