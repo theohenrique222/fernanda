@@ -7,6 +7,7 @@
   import protocol from './pages/protocol.vue';
   import services from './pages/services.vue';
   import end from './pages/end.vue';
+  import footerbar from './components/footerbar.vue';
 
 </script>
 
@@ -20,6 +21,7 @@
     <protocol/>
     <services/>
     <end/>
+    <footerbar/>
   </div>
 </template>
 
