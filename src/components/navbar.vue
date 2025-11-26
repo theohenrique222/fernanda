@@ -6,11 +6,16 @@
       class="w-full transition-all duration-700 border-b backdrop-blur-md fixed py-2 z-50"
       aria-label="Main navigation"
     >
-      <main class="flex max-w-6xl m-auto justify-between items-center py-2 px-3">
+      <main class="flex max-w-6xl m-auto justify-between items-center py-2 px-5">
         <!-- LOGO -->
         <div>
-          <img src="/img/logo.png" alt="Logo" class="lg:h-10 h-5" />
+          <img src="/img/logo.png" alt="Logo" class="lg:h-10 h-8" />
         </div>
+
+        <div class="flex gap-5 text-red-950 md:hidden">
+            <a href="#" @click="onMenuClick"><i class="pi pi-whatsapp"></i></a>
+            <a href="#" @click="onMenuClick"><i class="pi pi-instagram"></i></a>
+          </div>
 
         <!-- HAMBURGER (mobile) -->
         <button
@@ -28,7 +33,7 @@
           ref="menuRef"
           :class="[
             // mobile: absolute dropdown; desktop: static inline
-            'w-full md:w-auto md:static absolute left-0 md:left-auto md:top-auto top-full md:top-0 md:bg-transparent',
+            'w-full md:w-auto md:static absolute left-0 md:left-auto md:top-auto top-full md:top-0 bg-amber-50/95 backdrop-blur-md text-center shadow-2xl',
             'md:flex md:items-center transition-all duration-300',
             isOpen ? 'max-h-[400px] opacity-100 pointer-events-auto' : 'max-h-0 opacity-0 pointer-events-none'
           ]"
@@ -57,10 +62,10 @@
           </ul>
 
           <!-- ÍCONES MOBILE (aparecem dentro do dropdown) -->
-          <div class="flex gap-5 text-red-950 px-4 pb-4 md:hidden">
+          <!-- <div class="flex gap-5 text-red-950 px-4 pb-4 md:hidden">
             <a href="#" @click="onMenuClick"><i class="pi pi-whatsapp"></i></a>
             <a href="#" @click="onMenuClick"><i class="pi pi-instagram"></i></a>
-          </div>
+          </div> -->
         </div>
 
         <!-- ÍCONES DESKTOP -->
