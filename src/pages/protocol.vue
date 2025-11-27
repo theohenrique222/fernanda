@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="mt-5 lg:px-20 px-3 lg:text-start text-center text-lg">
-                <h3 class="text-red-950">
+                <h3 class="text-red-950 :text-base text-xs">
                     O <span class="font-extrabold">Refúgio do Corpo e Mente</span> é um convite para se desligar do dia
                     a dia e se reconectar consigo
                     mesmo. A cada sessão, diferentes técnicas terapêuticas se combinam para oferecer relaxamento
