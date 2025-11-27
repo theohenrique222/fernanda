@@ -2,17 +2,17 @@
     <section id="protocols" class="bg-amber-50 w-full">
         <main class="max-w-6xl m-auto">
             <div class="text-center mb-16">
-                <h1 class="lg:text-5xl text-4xl text-red-950 font-extrabold">
+                <h1 class="lg:text-5xl text-2xl text-red-950 font-extrabold">
                     Refúgio do Corpo e Mente
                 </h1>
             </div>
             <div class="lg:grid grid-cols-2 max-w-5xl m-auto">
                 <div v-for="(plan, index) in plans" :key="index" class="pb-10 px-3">
-                    <h3 class="text-red-950 mb-3 font-bold text-xl">
+                    <h3 class="text-red-950 mb-3 font-bold lg:text-xl text-sm">
                         {{ plan.title }} {{ plan.id }} - R$ {{ plan.price }}
                     </h3>
-                    <ul class="text-black text-sm list-disc list-inside">
-                        <li v-for="item, i in plan.description" :key="i" class="text-base font-extralight">
+                    <ul class="text-black list-disc list-inside">
+                        <li v-for="item, i in plan.description" :key="i" class="lg:text-base text-xs font-extralight">
                             {{ item }}
                         </li>
                     </ul>
