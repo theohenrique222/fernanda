@@ -6,7 +6,7 @@
             </div>
             <div class="lg:grid grid-cols-2 max-w-5xl m-auto lg:p-0 px-3">
                 <div v-for="(plan, index) in plans" :key="index" class="pb-10">
-                    <h3 class="text-red-950 pb-3 font-bold lg:text-xl text-base">
+                    <h3 class="text-red-950 pb-3 font-bold lg:text-xl text-sm">
                         {{ plan.title }} {{ plan.id }} - R$ {{ plan.price }}
                     </h3>
                     <ul class="text-black text-sm list-disc list-inside">
