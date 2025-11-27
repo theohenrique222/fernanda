@@ -6,10 +6,10 @@
             </div>
             <div class="lg:grid grid-cols-2 lg:gap-10 gap-2 lg:px-10 px-3">
                 <div v-for="(service, index) in services" :key="index" class="pb-10">
-                    <h3 class="text-red-950 mb-3 font-bold text-lg">
+                    <h3 class="text-red-950 mb-3 font-bold lg:text-lg text-base">
                         {{ service.title }}: {{ service.price }}
                     </h3>
-                    <p class="text-black text-sm">
+                    <p class="text-black lg:text-sm text-xs">
                         {{ service.description }}
                     </p>
                 </div>
