@@ -7,10 +7,17 @@
           <span class="font-bold">Fernanda Monteiro</span>.
         </p>
         <div class="flex justify-center gap-6 lg:pt-0 pt-4">
-          <a target="_blank" href="https://www.instagram.com/fernandamonteirofisio/" class="hover:text-red-700 transition-all">
-            <i class="pi pi-instagram text-2xl"></i>
+          <a 
+            target="_blank" 
+            href="https://www.instagram.com/fernandamonteirofisio/" 
+            class="hover:text-red-700 hover:-translate-y-1 transition-all">
+            <i 
+              class="pi pi-instagram text-2xl"></i>
           </a>
-          <a target="_blank" href="https://wa.me/5584992135716?text=Olá,+gostaria+de+falar+sobre+os+procedimentos+oferecidos!" class="hover:text-red-700 transition-all">
+          <a 
+            target="_blank" 
+            href="https://wa.me/5584992135716?text=Olá,+gostaria+de+falar+sobre+os+procedimentos+oferecidos!" 
+            class="hover:text-red-700 transition-all hover:-translate-y-1">
             <i class="pi pi-whatsapp text-2xl"></i>
           </a>
         </div>
