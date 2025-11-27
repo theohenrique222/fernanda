@@ -35,7 +35,7 @@
           ref="menuRef"
           :class="[
             // mobile: absolute dropdown; desktop: static inline
-            'w-full md:w-auto md:static absolute left-0 md:left-auto md:top-auto top-full md:top-0 bg-amber-50/95 backdrop-blur-md text-center shadow-2xl',
+            'w-full md:w-auto md:static absolute left-0 md:left-auto top-full md:top-0 bg-amber-50/95 backdrop-blur-md text-center shadow-2xl',
             'md:flex md:items-center transition-all duration-300',
             isOpen ? 'max-h-[400px] opacity-100 pointer-events-auto' : 'max-h-0 opacity-0 pointer-events-none'
           ]"
@@ -72,8 +72,12 @@
 
         <!-- ÍCONES DESKTOP -->
         <div class="hidden md:flex gap-5 text-red-950">
-          <a href="#"><i class="pi pi-whatsapp hover:-translate-y-1 transition-all" style="font-size: 1rem"></i></a>
-          <a href="#"><i class="pi pi-instagram hover:-translate-y-1 transition-all" style="font-size: 1rem"></i></a>
+          <a target="_blank" href="https://wa.me/5584992135716?text=Olá,+gostaria+de+falar+sobre+os+procedimentos+oferecidos!">
+            <i class="pi pi-whatsapp hover:-translate-y-1 transition-all" style="font-size: 1rem"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/fernandamonteirofisio/">
+            <i class="pi pi-instagram hover:-translate-y-1 transition-all" style="font-size: 1rem"></i>
+          </a>
         </div>
       </main>
     </nav>
