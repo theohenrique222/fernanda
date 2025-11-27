@@ -1,5 +1,5 @@
 <template>
-    <section id="plans" class="bg-amber-50 w-full">
+    <section id="plans" class="bg-amber-50 min-h-screen w-full">
         <main class="max-w-6xl m-auto">
             <div class="text-center pb-10">
                 <h1 class="lg:text-5xl text-2xl text-red-950 font-extrabold">Planos terapêuticos</h1>
