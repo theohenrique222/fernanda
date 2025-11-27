@@ -15,7 +15,7 @@
         </div>
 
         <div class="flex gap-5 text-red-950 md:hidden">
-            <a target="_blank" href="https://wa.me/5584992135716" @click="onMenuClick"><i class="pi pi-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5584992135716?text=Olá+gostaria+de+falar+sobre+os+procedimentos+oferecidos" @click="onMenuClick"><i class="pi pi-whatsapp"></i></a>
             <a target="_blank" href="https://www.instagram.com/fernandamonteirofisio/" @click="onMenuClick"><i class="pi pi-instagram"></i></a>
           </div>
 
