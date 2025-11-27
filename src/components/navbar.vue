@@ -3,7 +3,7 @@
     <nav
       ref="navbarRef"
       id="navbar"
-      class="w-full transition-all duration-700 border-b backdrop-blur-md fixed py-2 z-50"
+      class="w-full transition-all duration-700 border-b backdrop-blur-md fixed py-2 shadow-md z-50"
       aria-label="Main navigation"
     >
       <main class="flex max-w-6xl m-auto justify-between items-center py-2 px-5">
