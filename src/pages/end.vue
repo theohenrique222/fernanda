@@ -1,7 +1,7 @@
 <template>
     <section class="bg-amber-50 text-red-950">
         <main class="pt-28 text-center max-w-6xl m-auto">
-            <div class="mb-20">
+            <div class="mb-20 px-5">
                 <h1 class="text-red-950 lg:text-5xl text-xl">
                     Valorize-se: corpo e mente em equilíbrio são
                     seu melhor investimento.
