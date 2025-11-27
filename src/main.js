@@ -5,14 +5,10 @@ import Button from 'primevue/button';
 import 'primeicons/primeicons.css'
 import Menubar from 'primevue/menubar';
 import AutoComplete from 'primevue/autocomplete';
-
-
-
-
+import AnimateOnScroll from 'primevue/animateonscroll';
 import App from './App.vue';
 
 const app = createApp(App);
-
 
 app.use(PrimeVue, {
     theme: {
@@ -24,7 +20,7 @@ app.use(PrimeVue, {
                 name: 'primevue',
                 order: 'tailwind-base, primevue, tailwind-utilities'
             },
-            // 👇 FORÇA o variant LIGHT
+            
             includeDarkVariants: false,
             presetName: 'aura',
             presetValue: 'light'
@@ -32,9 +28,8 @@ app.use(PrimeVue, {
     }
 });
 
-
+app.directive('animateonscroll', AnimateOnScroll);
 app.component('AutoComplete', AutoComplete);
 app.component('Button', Button);
 app.component('Menubar', Menubar);
-
 app.mount('#app');
