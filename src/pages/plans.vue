@@ -1,7 +1,7 @@
 <template>
-    <section id="plans" class="min-h-screen bg-amber-50 w-full">
+    <section id="plans" class="bg-amber-50 w-full">
         <main class="max-w-6xl m-auto">
-            <div class="text-center pb-16">
+            <div class="text-center pb-10">
                 <h1 class="lg:text-5xl text-2xl text-red-950 font-extrabold">Planos terapêuticos</h1>
             </div>
             <div class="lg:grid grid-cols-2 max-w-5xl m-auto lg:p-0 px-3">
