@@ -9,7 +9,9 @@
       <main class="flex max-w-6xl m-auto justify-between items-center py-2 px-5">
         <!-- LOGO -->
         <div>
-          <img src="/img/logo.png" alt="Logo" class="lg:h-10 h-8" />
+          <a href="/">
+            <img src="/img/logo.png" alt="Logo" class="lg:h-10 h-8" />
+          </a>
         </div>
 
         <div class="flex gap-5 text-red-950 md:hidden">
