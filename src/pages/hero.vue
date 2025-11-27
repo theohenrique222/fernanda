@@ -2,7 +2,9 @@
     <section id="home" class="bg-amber-50 min-h-screen text-red-950">
         <main class="pt-16 text-center max-w-6xl m-auto">
             <div class="pt-10 mb-4 self-auto">
-                <img class="lg:h-56 h-46 mx-auto" src="/img/logo.png" alt="Logo">
+                <a href="/">
+                    <img class="lg:h-56 h-46 mx-auto" src="/img/logo.png" alt="Logo">
+                </a>
             </div>
             <div class="mb-2">
                 <h1 class="text-textcolor font-extrabold lg:text-7xl md:text-5xl text-3xl">

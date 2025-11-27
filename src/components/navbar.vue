@@ -15,8 +15,8 @@
         </div>
 
         <div class="flex gap-5 text-red-950 md:hidden">
-            <a target="_blank" href="https://wa.me/5584992135716?text=Olá,+gostaria+de+falar+sobre+os+procedimentos+oferecidos!" @click="onMenuClick"><i class="pi pi-whatsapp"></i></a>
-            <a target="_blank" href="https://www.instagram.com/fernandamonteirofisio/" @click="onMenuClick"><i class="pi pi-instagram"></i></a>
+            <a class="hover:-translate-y-1 transition-all" target="_blank" href="https://wa.me/5584992135716?text=Olá,+gostaria+de+falar+sobre+os+procedimentos+oferecidos!" @click="onMenuClick"><i class="pi pi-whatsapp"></i></a>
+            <a class="hover:-translate-y-1 transition-all" target="_blank" href="https://www.instagram.com/fernandamonteirofisio/" @click="onMenuClick"><i class="pi pi-instagram"></i></a>
           </div>
 
         <!-- HAMBURGER (mobile) -->
@@ -62,12 +62,6 @@
               </a>
             </li>
           </ul>
-
-          <!-- ÍCONES MOBILE (aparecem dentro do dropdown) -->
-          <!-- <div class="flex gap-5 text-red-950 px-4 pb-4 md:hidden">
-            <a href="#" @click="onMenuClick"><i class="pi pi-whatsapp"></i></a>
-            <a href="#" @click="onMenuClick"><i class="pi pi-instagram"></i></a>
-          </div> -->
         </div>
 
         <!-- ÍCONES DESKTOP -->
