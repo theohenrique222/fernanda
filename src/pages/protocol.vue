@@ -1,7 +1,7 @@
 <template>
     <section id="protocols" class="bg-amber-50 w-full">
         <main class="max-w-6xl m-auto">
-            <div class="text-center mb-16">
+            <div class="text-center mb-10">
                 <h1 class="lg:text-5xl text-2xl text-red-950 font-extrabold">
                     Refúgio do Corpo e Mente
                 </h1>
