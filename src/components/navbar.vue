@@ -120,10 +120,10 @@
       if (!navbar) return;
       if (window.scrollY > 50) {
         navbar.classList.add("py-0", "shadow-md");
-        navbar.classList.remove("py-5", "border-b");
+        navbar.classList.remove("py-5", "border-b", "border");
       } else {
         navbar.classList.remove("py-0", "shadow-md");
-        navbar.classList.add("py-5", "border-b");
+        navbar.classList.add("py-5");
       }
     };
 

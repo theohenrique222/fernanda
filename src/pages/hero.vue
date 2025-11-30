@@ -1,7 +1,7 @@
 <template>
     <section id="home" class="bg-amber-50 min-h-screen text-red-950">
         <main 
-            class="pt-16 text-center max-w-6xl m-auto"
+            class="pt-24 text-center max-w-6xl m-auto"
             v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
             >
             <div
