@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-amber-50 text-red-950 border-t border-red-200">
+  <footer class="bg-amber-50 text-red-950 border-t border-red-900">
     <main class="max-w-6xl m-auto px-6 py-5">
       <div class="flex flex-col lg:flex-row justify-between items-center text-center">
         <p class="font-light text-sm lg:text-base">
@@ -21,10 +21,6 @@
             <i class="pi pi-whatsapp text-2xl"></i>
           </a>
         </div>
-        <p class="font-light text-sm lg:text-base mt-4 lg:mt-0">
-          Desenvolvido por:
-          <span class="font-semibold">Theo Henrique</span>
-        </p>
       </div>
     </main>
   </footer>

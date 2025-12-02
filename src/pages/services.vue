@@ -1,7 +1,8 @@
 <template>
     <section id="" class="bg-amber-50 w-full pt-20">
         <main class="max-w-6xl m-auto">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16"
+                v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
                 <h1 class="lg:text-5xl text-2xl text-red-950 font-extrabold">
                     Atendimentos
                 </h1>
@@ -10,7 +11,10 @@
                 </h3>
             </div>
             <div class="max-w-5xl px-3 lg:px-20 ">
-                <div v-for="(plan, index) in plans" :key="index" class="pb-10">
+                <div v-for="(plan, index) in plans" 
+                    :key="index" 
+                    class="pb-10"
+                    v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
                     <ul class="text-black text-sm list-disc list-inside">
                         <li v-for="item, i in plan.description" :key="i" class="lg:text-xl text-xs font-extralight lg:pb-1 pb-3">
                             {{ item }}
@@ -18,7 +22,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="mt-5 lg:px-20 px-3 lg:text-start text-center">
+            <div class="mt-5 lg:px-20 px-3 lg:text-start text-center"
+                v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
                 <h3 class="text-red-950 lg:text-xl text-base font-bold">
                     Tudo pensado nos mínimos detalhes para oferecer uma experiência única e inesquecível!
                 </h3>
