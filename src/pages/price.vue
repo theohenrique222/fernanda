@@ -1,11 +1,15 @@
 <template>
     <section id="price" class="min-h-screen bg-amber-50">
         <main class="max-w-6xl m-auto">
-            <div class="text-center pb-14">
+            <div class="text-center pb-14"
+                v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
                 <h1 class="lg:text-4xl text-2xl text-red-950 font-extrabold">Equilíbrio e bem-estar para o corpo e a mente!</h1>
             </div>
             <div class="lg:grid grid-cols-2 lg:gap-10 gap-2 lg:px-10 px-3">
-                <div v-for="(service, index) in services" :key="index" class="pb-10">
+                <div v-for="(service, index) in services" 
+                    :key="index" 
+                    class="pb-10" 
+                    v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
                     <h3 class="text-red-950 mb-3 font-bold lg:text-lg text-base">
                         {{ service.title }}: {{ service.price }}
                     </h3>
