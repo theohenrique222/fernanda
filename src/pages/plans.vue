@@ -1,11 +1,13 @@
 <template>
     <section id="plans" class="bg-amber-50 min-h-screen w-full">
         <main class="max-w-6xl m-auto">
-            <div class="text-center pb-10">
+            <div class="text-center pb-10"
+                v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
                 <h1 class="lg:text-5xl text-2xl text-red-950 font-extrabold">Planos terapêuticos</h1>
             </div>
             <div class="lg:grid grid-cols-2 max-w-5xl m-auto lg:p-0 px-3">
-                <div v-for="(plan, index) in plans" :key="index" class="pb-10">
+                <div v-for="(plan, index) in plans" :key="index" class="pb-10"
+                    v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
                     <h3 class="text-red-950 pb-3 font-bold lg:text-xl text-sm">
                         {{ plan.title }} {{ plan.id }} - R$ {{ plan.price }}
                     </h3>
