@@ -59,18 +59,6 @@ export default {
                     price: "159,90",
                     description: ["Drenagem Linfática", "Massagem Modeladora", "Escalda Pés"]
                 },
-                {
-                    id: 5,
-                    title: "PROTOCOLO",
-                    price: "149,90",
-                    description: ["Drenagem Linfática", "Dry Needling", "Liberação Miofascial"]
-                },
-                {
-                    id: 6,
-                    title: "PROTOCOLO",
-                    price: "149,90",
-                    description: ["Ventosaterapia", "Dry Needling", "Liberação Miofascial"]
-                }
             ]
         }
     }
