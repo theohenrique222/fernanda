@@ -33,7 +33,7 @@
           ref="menuRef"
           :class="[
             // mobile: absolute dropdown; desktop: static inline
-            'w-full md:w-auto md:static absolute left-0 md:left-auto md:top-auto top-full md:top-0 bg-amber-50/95 backdrop-blur-md text-center shadow-2xl',
+            'w-full md:w-auto md:static absolute left-0 md:left-auto top-full md:top-0 bg-amber-50/95 backdrop-blur-md text-center shadow-2xl',
             'md:flex md:items-center transition-all duration-300',
             isOpen ? 'max-h-[400px] opacity-100 pointer-events-auto' : 'max-h-0 opacity-0 pointer-events-none'
           ]"
@@ -62,10 +62,10 @@
           </ul>
 
           <!-- ÍCONES MOBILE (aparecem dentro do dropdown) -->
-          <!-- <div class="flex gap-5 text-red-950 px-4 pb-4 md:hidden">
+          <div class="flex gap-5 text-red-950 px-4 pb-4 md:hidden">
             <a href="#" @click="onMenuClick"><i class="pi pi-whatsapp"></i></a>
             <a href="#" @click="onMenuClick"><i class="pi pi-instagram"></i></a>
-          </div> -->
+          </div>
         </div>
 
         <!-- ÍCONES DESKTOP -->
@@ -104,16 +104,14 @@ const closeMenu = () => {
   isOpen.value = false;
 };
 
-// chamado quando clica num item do menu (fecha no mobile)
 const onMenuClick = () => {
-  // permitir que o anchor funcione normalmente (rolagem suave via CSS)
+
   closeMenu();
 };
 
 onMounted(() => {
   const navbar = navbarRef.value;
 
-  // NAVBAR DIMINUI AO ROLAR
   const handleScroll = () => {
     if (!navbar) return;
     if (window.scrollY > 50) {
@@ -127,7 +125,6 @@ onMounted(() => {
 
   window.addEventListener("scroll", handleScroll);
 
-  // SCROLL SPY (IntersectionObserver)
   const sections = document.querySelectorAll("section[id]");
   const observer = new IntersectionObserver(
     (entries) => {
@@ -141,13 +138,12 @@ onMounted(() => {
   );
   sections.forEach((section) => observer.observe(section));
 
-  // CLICK OUTSIDE: fecha o menu se clicar fora (mobile)
   const handleClickOutside = (e) => {
     if (!isOpen.value) return;
     const menuEl = menuRef.value;
     const burgerEl = burgerRef.value;
     if (!menuEl) return;
-    // se o clique NÃO ocorreu dentro do menu e NÃO no botão hamburguer -> fechar
+
     if (!menuEl.contains(e.target) && !burgerEl.contains(e.target)) {
       closeMenu();
     }
@@ -157,17 +153,16 @@ onMounted(() => {
   onUnmounted(() => {
     window.removeEventListener("scroll", handleScroll);
     document.removeEventListener("click", handleClickOutside);
-    // desconectar observer
+
     observer.disconnect();
   });
 });
 </script>
 
 <style scoped>
-/* Pequena transição para os estados do menu (mobile) */
+
 [ref="menuRef"] {
   transition: max-height 280ms ease, opacity 220ms ease;
 }
 
-/* fallback: caso o atributo ref não funcione no selector, o elemento já tem transition classes inline */
 </style>
