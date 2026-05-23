@@ -81,7 +81,7 @@
         </div>
         <a href="https://wa.me/5584992135716?text=Olá,+gostaria+de+falar+sobre+os+procedimentos+oferecidos!"
           target="_blank"
-          class="inline-flex items-center gap-3 bg-terracotta hover:bg-terracotta-dark text-white font-body font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0">
+          class="inline-flex items-center gap-3 bg-terracotta hover:bg-terracotta-dark text-white font-body font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 cursor-pointer animate-[pulse-glow_3s_ease-in-out_infinite] hover:animate-none">
           <i class="pi pi-whatsapp text-xl"></i>
           <span>Agende sua sessão</span>
         </a>
