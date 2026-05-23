@@ -4,108 +4,27 @@
       <div class="flex items-center justify-between h-16">
 
         <!-- Logo -->
-        <a href="#" class="flex-shrink-0 flex items-center gap-2">
+        <a href="/" class="shrink-0 flex items-center gap-2">
           <img src="/img/logo.png" alt="Fernanda" class="h-8 w-auto" />
         </a>
 
-        <!-- Desktop links -->
-        <div class="hidden md:flex md:items-center md:space-x-8">
-          <a
-            v-for="menu in menus"
-            :key="menu.id"
-            :href="menu.href"
-            class="text-sm font-medium transition-colors relative pb-1"
-            :class="activeSection === menu.href.substring(1) ? 'text-terracotta-dark font-semibold' : 'text-muted hover:text-terracotta'"
-          >
-            {{ menu.title }}
-            <span v-if="activeSection === menu.href.substring(1)" class="absolute bottom-0 left-0 w-full h-0.5 bg-terracotta-dark rounded-full"></span>
-          </a>
-        </div>
-
-        <div class="flex items-center gap-3 md:hidden">
-          <button
-            @click="toggleMenu"
-            class="text-red-950 text-2xl focus:outline-none"
-            aria-label="Abrir menu"
-            ref="burgerRef"
-          >
-            <i :class="isOpen ? 'pi pi-times' : 'pi pi-bars'"></i>
-          </button>
-        </div>
+        <!-- CTA -->
+        <a
+          href="https://wa.me/5584992135716?text=Olá,+gostaria+de+falar+sobre+os+procedimentos+oferecidos!"
+          target="_blank"
+          class="inline-flex items-center gap-1.5 sm:gap-2 bg-terracotta hover:bg-terracotta-dark text-white font-body font-medium px-3.5 py-2 sm:px-6 sm:py-2.5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+        >
+          <i class="pi pi-whatsapp text-sm sm:text-lg"></i>
+          <span class="text-xs sm:text-sm">Agende sua sessão</span>
+        </a>
 
       </div>
-    </div>
-
-    <div
-      ref="menuRef"
-      class="md:hidden overflow-hidden transition-all duration-300 bg-amber-50/95 backdrop-blur-md shadow-2xl"
-      :class="isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'"
-    >
-      <ul class="flex flex-col px-4 py-4 space-y-3">
-        <li v-for="menu in menus" :key="menu.id">
-          <a
-            :href="menu.href"
-            class="block px-3 py-2 rounded-md text-sm font-medium transition-colors"
-            :class="activeSection === menu.href.substring(1) ? 'text-terracotta-dark font-semibold bg-sage-light' : 'text-muted hover:text-terracotta hover:bg-sage-light'"
-            @click="closeMenu"
-          >
-            {{ menu.title }}
-          </a>
-        </li>
-      </ul>
     </div>
   </nav>
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { ref } from 'vue'
 
-const activeSection = ref('hero')
-const isOpen = ref(false)
 const navbarRef = ref(null)
-const menuRef = ref(null)
-const burgerRef = ref(null)
-
-const menus = [
-  { id: 1, title: "Início", href: "#home" },
-  { id: 2, title: "Sobre", href: "#about" },
-  { id: 3, title: "Serviços", href: "#atendimentos" },
-  { id: 4, title: "Preços", href: "#precos" },
-  { id: 5, title: "Planos", href: "#plans" },
-]
-
-const toggleMenu = () => { isOpen.value = !isOpen.value }
-const closeMenu = () => { isOpen.value = false }
-
-let observer = null
-
-onMounted(() => {
-  const sections = document.querySelectorAll("section[id]")
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          activeSection.value = entry.target.id
-        }
-      })
-    },
-    { threshold: 0.5 }
-  )
-  sections.forEach((s) => observer.observe(s))
-
-  document.addEventListener("click", handleClickOutside)
-})
-
-onUnmounted(() => {
-  if (observer) observer.disconnect()
-  document.removeEventListener("click", handleClickOutside)
-})
-
-const handleClickOutside = (e) => {
-  if (!isOpen.value) return
-  if (!menuRef.value || !burgerRef.value) return
-  if (!menuRef.value.contains(e.target) && !burgerRef.value.contains(e.target)) {
-    closeMenu()
-  }
-}
 </script>
