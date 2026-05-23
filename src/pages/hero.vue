@@ -3,7 +3,7 @@
     <!-- Floating background blobs -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-sage/15 blur-3xl animate-[float-slow_8s_ease-in-out_infinite]"></div>
-      <div class="absolute -bottom-32 -left-32 w-[30rem] h-[30rem] rounded-full bg-nude/20 blur-3xl animate-[float-slower_12s_ease-in-out_infinite_reverse]"></div>
+      <div class="absolute -bottom-32 -left-32 w-120 h-120 rounded-full bg-nude/20 blur-3xl animate-[float-slower_12s_ease-in-out_infinite_reverse]"></div>
       <div class="absolute top-1/3 right-1/4 w-72 h-72 rounded-full bg-sage/8 blur-3xl animate-[float-slower_10s_ease-in-out_infinite]"></div>
       <div class="absolute bottom-1/4 left-1/4 w-96 h-96 rounded-full bg-terracotta/5 blur-3xl animate-[float-slow_14s_ease-in-out_infinite_reverse]"></div>
     </div>
@@ -15,7 +15,7 @@
       <div class="absolute inset-[20%] rounded-full border border-terracotta/5 animate-[float-slower_6s_ease-in-out_infinite]"></div>
     </div>
 
-    <main class="relative z-10 text-center max-w-4xl mx-auto px-5">
+    <main class="relative z-10 text-center max-w-4xl mx-auto px-5 pb-16">
       <!-- Logo -->
       <div v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_0.8s_ease_forwards]' }" class="mb-10">
         <div class="relative inline-block">

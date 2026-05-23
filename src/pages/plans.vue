@@ -26,7 +26,7 @@
           </div>
           <ul class="space-y-2.5 flex-1">
             <li v-for="(item, i) in plan.description" :key="i" class="font-body text-stone text-sm md:text-base flex items-start gap-3">
-              <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage flex-shrink-0"></span>
+              <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage shrink-0"></span>
               <span>{{ item }}</span>
             </li>
           </ul>
