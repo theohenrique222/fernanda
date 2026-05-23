@@ -55,7 +55,7 @@
             <!-- Icon + Title -->
             <div class="flex items-start gap-4 mb-5">
               <div class="shrink-0 w-12 h-12 rounded-2xl
-                           bg-gradient-to-br from-sage/30 to-sage/5
+                           bg-gradient-to-br from-terracotta/50 to-terracotta-dark
                            flex items-center justify-center text-sage-dark
                            shadow-sm group-hover:shadow-md
                            group-hover:scale-110 group-hover:rotate-[3deg]
@@ -84,9 +84,18 @@
                 R$ {{ service.price.replace('R$ ', '') }}
               </span>
             </div>
+
+            <!-- WhatsApp button -->
+            <a :href="`https://wa.me/5584992135716?text=${encodeURIComponent('Olá, gostaria de agendar ' + service.title + '!')}`" target="_blank"
+               class="mt-4 w-full inline-flex items-center justify-center gap-2 text-stone/50 hover:text-green-600 font-heading text-xs uppercase tracking-[0.15em]
+                      py-2 border-t border-border/10 hover:border-green-200/50 transition-all duration-300">
+              <i class="pi pi-whatsapp text-sm"></i>
+              Agende agora
+            </a>
           </div>
         </div>
       </div>
+
     </main>
   </section>
 </template>
