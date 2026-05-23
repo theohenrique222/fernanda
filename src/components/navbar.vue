@@ -69,9 +69,9 @@ const burgerRef = ref(null)
 const menus = [
   { id: 1, title: "Início", href: "#home" },
   { id: 2, title: "Sobre", href: "#about" },
-  { id: 3, title: "Preços", href: "#price" },
-  { id: 4, title: "Planos", href: "#plans" },
-  { id: 6, title: "Serviços", href: "#atendimentos" },
+  { id: 3, title: "Serviços", href: "#atendimentos" },
+  { id: 4, title: "Preços", href: "#precos" },
+  { id: 5, title: "Planos", href: "#plans" },
 ]
 
 const toggleMenu = () => { isOpen.value = !isOpen.value }
