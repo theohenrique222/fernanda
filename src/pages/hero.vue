@@ -77,11 +77,11 @@
       <div v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_2.5s_ease_forwards]' }"
         class="inline-block relative">
         <div
-          class="absolute inset-0 rounded-full bg-terracotta/15 blur-xl animate-[pulse-glow_2.5s_ease-in-out_infinite]">
+          class="absolute flex-inset-0 rounded-full bg-terracotta/15 blur-xl animate-[pulse-glow_2.5s_ease-in-out_infinite]">
         </div>
         <a href="https://wa.me/5584992135716?text=Olá,+gostaria+de+falar+sobre+os+procedimentos+oferecidos!"
           target="_blank"
-          class="inline-flex items-center gap-3 bg-terracotta hover:bg-terracotta-dark text-white font-body font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 cursor-pointer animate-[pulse-glow_3s_ease-in-out_infinite] hover:animate-none">
+          class="inline-flex items-center gap-3 bg-terracotta hover:bg-terracotta-dark text-white font-body font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0">
           <i class="pi pi-whatsapp text-xl"></i>
           <span>Agende sua sessão</span>
         </a>
