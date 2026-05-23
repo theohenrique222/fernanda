@@ -31,7 +31,7 @@
             </li>
           </ul>
           <div class="mt-6 pt-6 border-t border-border/60">
-            <a href="https://wa.me/5584992135716?text=Olá,+gostaria+de+saber+mais+sobre+o+protocolo+{{ plan.title }}" target="_blank"
+             <a :href="`https://wa.me/5584992135716?text=${encodeURIComponent('Olá, gostaria de saber mais sobre o protocolo ' + plan.title)}`" target="_blank"
               class="block w-full text-center font-body text-sm font-medium text-terracotta hover:text-white border border-terracotta hover:bg-terracotta rounded-xl py-3 transition-all duration-300">
               Tenho interesse
             </a>

@@ -10,7 +10,10 @@
     <main class="relative max-w-6xl mx-auto px-5">
       <!-- Header -->
       <div class="text-center mb-16" v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
-        <span class="font-body text-xs uppercase tracking-[0.25em] text-stone font-medium">Serviços</span>
+        <span class="flex items-center justify-center gap-2 font-body text-xs uppercase tracking-[0.25em] text-stone font-medium">
+          <i class="pi pi-sparkles text-terracotta/70"></i>
+          Serviços
+        </span>
         <h1 class="font-heading text-charcoal text-3xl md:text-4xl lg:text-5xl font-bold mt-3 leading-tight">
           Equilíbrio e bem-estar<br class="hidden md:block"> para o corpo e a mente!
         </h1>
