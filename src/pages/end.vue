@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-32 lg:py-40 bg-gradient-to-t from-cream to-warm overflow-hidden">
+  <section id="contato" class="relative py-32 lg:py-40 bg-gradient-to-t from-cream to-warm overflow-hidden">
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/10 blur-3xl"></div>
     </div>

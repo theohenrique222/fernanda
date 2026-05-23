@@ -11,9 +11,9 @@
    import navbar from './components/navbar.vue';
  </script>
  
- <template>
-   <div class="bg-warm">
-     <navbar/>
+  <template>
+    <div class="bg-warm pt-16">
+      <navbar/>
      <hero/>
      <about/>
      <price/>
