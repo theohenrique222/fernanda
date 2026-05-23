@@ -1,5 +1,5 @@
 <template>
-  <section id="precos" class="relative py-24 lg:py-32 bg-cream overflow-hidden">
+  <section id="services" class="relative py-24 lg:py-32 bg-cream overflow-hidden">
     <!-- Decorative background blobs -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div class="absolute -top-40 -left-40 w-80 h-80 rounded-full bg-gradient-to-br from-sage/20 to-transparent blur-3xl"></div>

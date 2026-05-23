@@ -2,7 +2,7 @@
  
    import hero from './pages/hero.vue';
    import about from './pages/about.vue';
-   import price from './pages/price.vue';
+   import price from './pages/Services.vue';
    import plans from './pages/plans.vue';
    import services from './pages/services.vue';
    import end from './pages/end.vue';
