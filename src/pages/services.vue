@@ -7,7 +7,7 @@
           Atendimentos
         </h1>
         <p class="font-body text-stone text-sm md:text-base mt-4 max-w-xl mx-auto">
-          Atendimento em espaço projetado para um maior conforto:
+          Atendimento domiciliar pensado para oferecer conforto, praticidade e bem-estar no seu próprio ambiente
         </p>
       </div>
 
@@ -23,7 +23,7 @@
 
       <div class="max-w-3xl mx-auto text-center mt-12" v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
         <p class="font-heading text-charcoal text-lg md:text-xl font-medium italic leading-relaxed">
-          Tudo pensado nos mínimos detalhes para oferecer uma experiência única e inesquecível!
+          Tudo planejado nos mínimos detalhes para proporcionar cuidado, relaxamento e uma experiência única sem que você precise sair de casa.
         </p>
       </div>
     </main>
@@ -35,11 +35,11 @@ export default {
   data() {
     return {
       amenities: [
-        { label: "Sala de espera climatizada", icon: "pi pi-sun" },
-        { label: "Som ambiente", icon: "pi pi-volume-up" },
-        { label: "Iluminação confortável", icon: "pi pi-star" },
-        { label: "Estacionamento facilitado", icon: "pi pi-car" },
-        { label: "Fácil localização", icon: "pi pi-map-marker" },
+        { label: "Atendimento personalizado no conforto da sua casa", icon: "pi pi-sun" },
+        { label: "Materiais e equipamentos levados até você", icon: "pi pi-volume-up" },
+        { label: "Mais comodidade e privacidade durante as sessões", icon: "pi pi-star" },
+        { label: "Horários flexíveis para melhor adaptação à sua rotina", icon: "pi pi-car" },
+        { label: "Experiência acolhedora e humanizada", icon: "pi pi-map-marker" },
       ]
     }
   }

@@ -31,7 +31,7 @@
       <div class="flex-1 order-1 lg:order-2 w-full max-w-md lg:max-w-none" v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_2s_ease_forwards]' }">
         <div class="relative">
           <div class="absolute -top-4 -right-4 w-full h-full border-2 border-nude rounded-2xl"></div>
-          <img class="relative w-full h-auto lg:h-[32rem] object-cover rounded-2xl shadow-xl" src="/img/avatar.png" alt="Fernanda Monteiro">
+          <img class="relative w-full h-auto lg:h-[32rem] object-cover object-top rounded-2xl shadow-xl" src="/img/avatar.png" alt="Fernanda Monteiro">
         </div>
       </div>
     </main>
