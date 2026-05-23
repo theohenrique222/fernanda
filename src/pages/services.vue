@@ -1,49 +1,47 @@
 <template>
-    <section id="" class="bg-amber-50 w-full pt-20">
-        <main class="max-w-6xl m-auto">
-            <div class="text-center mb-16"
-                v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
-                <h1 class="lg:text-5xl text-2xl text-red-950 font-extrabold">
-                    Atendimentos
-                </h1>
-                <h3 class="lg:text-3xl text-base text-red-950 lg:pt-10 pt-5 px-3">
-                    Atendimento em espaço projetado para um maior conforto:
-                </h3>
-            </div>
-            <div class="max-w-5xl px-3 lg:px-20 ">
-                <div v-for="(plan, index) in plans" 
-                    :key="index" 
-                    class="pb-10"
-                    v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
-                    <ul class="text-black text-sm list-disc list-inside">
-                        <li v-for="item, i in plan.description" :key="i" class="lg:text-xl text-xs font-extralight lg:pb-1 pb-3">
-                            {{ item }}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-5 lg:px-20 px-3 lg:text-start text-center"
-                v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
-                <h3 class="text-red-950 lg:text-xl text-base font-bold">
-                    Tudo pensado nos mínimos detalhes para oferecer uma experiência única e inesquecível!
-                </h3>
-            </div>
-        </main>
-    </section>
+  <section id="atendimentos" class="py-24 lg:py-32 bg-warm">
+    <main class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-16" v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
+        <span class="font-body text-xs uppercase tracking-[0.25em] text-stone font-medium">Estrutura</span>
+        <h1 class="font-heading text-charcoal text-3xl md:text-4xl lg:text-5xl font-bold mt-3 leading-tight">
+          Atendimentos
+        </h1>
+        <p class="font-body text-stone text-sm md:text-base mt-4 max-w-xl mx-auto">
+          Atendimento em espaço projetado para um maior conforto:
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-5" v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
+        <div v-for="(item, i) in amenities" :key="i"
+          class="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm hover:shadow-md border border-border/60 transition-all duration-300 hover:-translate-y-0.5">
+          <div class="w-11 h-11 rounded-lg bg-sage/20 flex items-center justify-center flex-shrink-0">
+            <i :class="item.icon" class="text-terracotta text-lg"></i>
+          </div>
+          <span class="font-body text-charcoal text-sm md:text-base font-medium">{{ item.label }}</span>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mx-auto text-center mt-12" v-animateonscroll="{ enterClass: 'opacity-0 animate-[fadeIn_1s_ease_forwards]' }">
+        <p class="font-heading text-charcoal text-lg md:text-xl font-medium italic leading-relaxed">
+          Tudo pensado nos mínimos detalhes para oferecer uma experiência única e inesquecível!
+        </p>
+      </div>
+    </main>
+  </section>
 </template>
+
 <script>
 export default {
-    data() {
-        return {
-            plans: [
-                {
-                    id: 1,
-                    title: "Relaxamento Profundo",
-                    price: "129,90",
-                    description: ["Sala de espera climatizada.", "Som ambiente.", "Iluminação confortável.", "Estacionamento facilitado.", "Fácil localização."],
-                },
-            ]
-        }
+  data() {
+    return {
+      amenities: [
+        { label: "Sala de espera climatizada", icon: "pi pi-sun" },
+        { label: "Som ambiente", icon: "pi pi-volume-up" },
+        { label: "Iluminação confortável", icon: "pi pi-star" },
+        { label: "Estacionamento facilitado", icon: "pi pi-car" },
+        { label: "Fácil localização", icon: "pi pi-map-marker" },
+      ]
     }
+  }
 }
 </script>

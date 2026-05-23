@@ -8,11 +8,10 @@
   import services from './pages/services.vue';
   import end from './pages/end.vue';
   import footerbar from './components/footerbar.vue';
-
 </script>
 
 <template>
-  <div>
+  <div class="bg-warm">
     <navbar/>
     <hero/>
     <about/>
@@ -24,5 +23,3 @@
     <footerbar/>
   </div>
 </template>
-
-<style scoped></style>

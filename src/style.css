@@ -1,12 +1,51 @@
 @import "tailwindcss";
 
+@theme {
+  --color-cream: #faf5ef;
+  --color-warm: #fdfaf7;
+  --color-sage: #d6dfd4;
+  --color-sage-light: #e5ebe4;
+  --color-terracotta: #c4836e;
+  --color-terracotta-dark: #a0705e;
+  --color-nude: #e6d6c8;
+  --color-stone: #6b5e55;
+  --color-charcoal: #3d322d;
+  --color-muted: #a09287;
+  --color-border: #e6ddd4;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
 * {
-    font-family: Libre Baskerville;
-    scroll-behavior: smooth;
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-warm);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-nude);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-terracotta);
+}
