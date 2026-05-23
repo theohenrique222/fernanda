@@ -22,10 +22,7 @@
           </a>
         </div>
 
-        <!-- Mobile social + hamburger -->
         <div class="flex items-center gap-3 md:hidden">
-          <a href="#" class="text-red-950 text-lg"><i class="pi pi-whatsapp"></i></a>
-          <a href="#" class="text-red-950 text-lg"><i class="pi pi-instagram"></i></a>
           <button
             @click="toggleMenu"
             class="text-red-950 text-2xl focus:outline-none"
@@ -39,7 +36,6 @@
       </div>
     </div>
 
-    <!-- Mobile dropdown -->
     <div
       ref="menuRef"
       class="md:hidden overflow-hidden transition-all duration-300 bg-amber-50/95 backdrop-blur-md shadow-2xl"
@@ -75,9 +71,7 @@ const menus = [
   { id: 2, title: "Sobre", href: "#about" },
   { id: 3, title: "Preços", href: "#price" },
   { id: 4, title: "Planos", href: "#plans" },
-  { id: 5, title: "Protocolo", href: "#protocols" },
   { id: 6, title: "Serviços", href: "#atendimentos" },
-  { id: 7, title: "Fim", href: "#contato" },
 ]
 
 const toggleMenu = () => { isOpen.value = !isOpen.value }
